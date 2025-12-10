@@ -1,10 +1,12 @@
-import type { PropsWithChildren } from "react";
+import type { HTMLProps } from "react";
 
-export default function Section({children, divider = true}: PropsWithChildren<{divider?: boolean;}>) {
+export type SectionProps = HTMLProps<HTMLDivElement> & { divider?: boolean; };
+
+export default function Section({ children, divider = true, ...rest }: SectionProps) {
     return (
-        <>
+        <div {...rest}>
             <div className="mb-4">{children}</div>
-            {divider && <hr className="mb-4 last:hidden" />}
-        </>
+            {divider && <hr className="mb-4" />}
+        </div>
     )
 }

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { NavLink, useLocation } from "react-router";
+import logo from '../assets/logo.png';
 
 const routes = {
     "/": "Home",
@@ -21,8 +22,8 @@ export default function Header() {
     }, [location]);
 
     return (
-        <header className="bg-teal-600 flex mb-8 px-12 py-4 text-white sticky top-0">
-            <NavLink to="/"><h1 className="text-3xl">{title}</h1></NavLink>
+        <header className="bg-[#C08081] flex mb-8 px-12 py-2 text-white sticky top-0">
+            <NavLink to="/"><img src={logo} className="h-32 overflow-hidden" /></NavLink>
             <nav className="ml-8 flex gap-4 items-center text-xl">
                 {Object.entries(routes).map(([path, name]) => (
                     <NavLink key={path} to={path} className={({ isActive }) => isActive ? "underline" : ""}>{name}</NavLink>

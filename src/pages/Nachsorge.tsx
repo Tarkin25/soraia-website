@@ -3,6 +3,7 @@ import Section from "../components/Section";
 import Title from "../components/Title";
 import UL from "../components/UL";
 import img1 from '../assets/image1.jpg';
+import Image from "../components/Image";
 
 export default function Nachsorge() {
     return (
@@ -14,7 +15,7 @@ export default function Nachsorge() {
                         <P>Ein Zahnimplantat kann viele Jahre oder sogar ein Leben lang halten – vorausgesetzt, es wird richtig gepflegt. Die Nachsorge ist deshalb ein zentraler Bestandteil der Implantatbehandlung. Sie beginnt bereits in den ersten Tagen nach dem Eingriff und begleitet Sie dauerhaft.</P>
                     </div>
                     <div className="w-xl">
-                        <img src={img1} />
+                        <Image src={img1} source="https://www.neveclinic.ch/de/implantologie/einsetzen-von-zahnimplantaten/" />
                     </div>
                 </div>
             </Section>

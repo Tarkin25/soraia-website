@@ -6,6 +6,8 @@ import Krankheitsbild from "./pages/Krankheitsbild";
 import Diagnostik from "./pages/Diagnostik";
 import Ablauf from "./pages/Ablauf";
 import Nachsorge from "./pages/Nachsorge";
+import Kontaktstellen from "./pages/Kontaktstellen";
+import Forum from "./pages/Forum";
 
 export default function App() {
     return (
@@ -18,6 +20,8 @@ export default function App() {
                     <Route path="diagnostik" Component={Diagnostik} />
                     <Route path="ablauf" Component={Ablauf} />
                     <Route path="nachsorge" Component={Nachsorge} />
+                    <Route path="kontaktstellen" Component={Kontaktstellen} />
+                    <Route path="forum" Component={Forum} />
                 </Routes>
             </Container>
         </div>

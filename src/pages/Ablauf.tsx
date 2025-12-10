@@ -4,6 +4,7 @@ import Title from "../components/Title";
 import UL from "../components/UL";
 import YoutubeVideo from "../components/YoutubeVideo";
 import img2 from '../assets/image2.jpg';
+import Image from "../components/Image";
 
 export default function Ablauf() {
     return (
@@ -108,7 +109,7 @@ export default function Ablauf() {
                         </UL>
                     </div>
                     <div className="w-xl">
-                        <img src={img2} />
+                        <Image src={img2} source="https://www.turkeydentalclinic.com/fragen-zu-zahnimplantaten/" />
                     </div>
                 </div>
             </Section>

@@ -5,6 +5,7 @@ import Title from "../components/Title";
 import img3 from '../assets/image3.jpg'
 import img4 from '../assets/image4.jpg'
 import img5 from '../assets/image5.jpg'
+import Image from "../components/Image";
 
 export default function Home() {
 
@@ -19,11 +20,12 @@ export default function Home() {
             </Section>
             <Section divider={false}>
                     <div className="mx-auto w-xl">
-                        <div><img src={img3} /></div>
+                        <div><Image src={img3} source="https://smilist.de/mein-zahnfleisch-blutet-wenn-ich-zahnseide-benutze/" /></div>
                         <div className="flex">
-                            <img className="w-1/2" src={img5} />
-                            <img className="w-1/2" src={img4} />
+                            <Image className="w-1/2" src={img5} />
+                            <Image className="w-1/2" src={img4} />
                         </div>
+                        <p className="text-sm">Quelle: https://ecdi.de/ratgeber/parodontitis/</p>
                     </div>
                 </Section>
             <Section>

@@ -77,6 +77,7 @@ export default function Krankheitsbild() {
                     <div className="w-xl">
                         <img src={img7} />
                         <img src={img6} />
+                        <p className="text-sm">Quelle: https://ecdi.de/ratgeber/parodontitis/</p>
                     </div>
                     <div className="w-xl">
                         <YoutubeVideo videoId="PePItaz2_rM" />
